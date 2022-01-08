@@ -29,12 +29,17 @@
    <input 
     id="email"
     class="user-info-input"
+    type="email"
     placeholder="Please enter email"
     required>
    <label id="number-label" class="survey-label">Years of Experience:</label>
    <input 
    id="number"
    class="user-info-input"
+   type="number"
+   type="range"
+   min=0
+   max=100
    placeholder="Please enter years of experience">
    </div>
    
@@ -55,7 +60,7 @@
   <input type="radio" id="react" name="framework-used" value="React">
    <label for="react">React</label>
    
-  <input type="radio" id="angular" name="js-framework-used" value="Angular">
+  <input type="radio" id="angular" name="framework-used" value="Angular">
    <label for="angular">Angular</label>
    
   <input type="radio" id="vue" name="framework-used" value="Vue.js">
@@ -68,13 +73,13 @@
     
   <div class="checkbox-options">
    <label for="dev-type" class="survey-label">Please select what best describes your role?(Please check all that apply.)</label>
-    <input type="checkbox" id="vue" name="framework-used" value="Vue.js">
+    <input type="checkbox" id="vue" name="framework-used" value="Front-End">
    <label for="vue">Front-End</label>
-   <input type="checkbox" id="vue" name="framework-used" value="Vue.js">
+   <input type="checkbox" id="vue" name="framework-used" value="Back-End">
    <label for="vue">Back-End</label>
-   <input type="checkbox" id="vue" name="framework-used" value="Vue.js">
+   <input type="checkbox" id="vue" name="framework-used" value="Full-Stack">
    <label for="vue">Full-Stack</label>
-   <input type="checkbox" id="vue" name="framework-used" value="Vue.js">
+   <input type="checkbox" id="vue" name="framework-used" value="Mobile">
    <label for="vue">Mobile</label>
  </div>
    
