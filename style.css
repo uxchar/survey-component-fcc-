@@ -1,0 +1,98 @@
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+.survey-card {
+  width: 375px;
+  height: auto;
+  font-family: "Inter", sans-serif;
+  background-color: #fff;
+  border-radius: 20px;
+  margin: 50px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+label {
+  margin-left: 2px;
+}
+
+#title {
+  margin: 30px 20px;
+}
+
+#description {
+  margin: auto 20px;
+}
+
+.general-info {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 15px;
+}
+
+.survey-label {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+
+.user-info-input {
+  height: 40px;
+  border: 3px solid #000;
+  border-radius: 15px;
+  padding-left: 15px;
+}
+
+input {
+  font-size: 16px;
+}
+
+input::placeholder {
+  font-size: 16px;
+}
+
+.dropdown-options {
+  margin: 30px 15px;
+}
+
+.radio-options {
+  margin: auto 15px 30px 15px;
+}
+.checkbox-options {
+  margin: auto 15px 30px 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  display: flex;
+  align-items: center;
+}
+
+input[type="radio"] {
+  flex: none;
+}
+
+input[type="checkbox"] {
+  flex: none;
+}
+
+textarea {
+  margin: auto 15px 30px 15px;
+}
+#submit {
+  margin: 0 15px 30px 15px;
+  width: 90%;
+  height: 60px;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #41fa85;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
