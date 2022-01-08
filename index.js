@@ -1,16 +1,18 @@
 //querySeletors for HTML elements being tested
-let email = document.querySelector("#email").value;
-let number = document.querySelector("#number").value;
+let email = document.querySelector("#email");
+let number = document.querySelector("#number");
+let survey = document.querySelector("#survey-form");
 
-function validateForm(e, email, number) {
-  e.preventDefault();
-  validateEmail(email);
-  validateYears(number);
-}
+survey.addEventListener("submit", (event) => {
+  event.preventDefault();
+  validateEmail();
+  validateYears();
+});
+
 //function to test email against regex validation
 function validateEmail() {
   //if email input passes regex test, continue
-  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value)) {
     return true;
   }
   alert("You have entered an invalid email address!");
@@ -20,9 +22,9 @@ function validateEmail() {
 //function to test for valid number input
 function validateYears() {
   //check if input is an invalid character , if not alert error
-  if (/^\d+$/.test(number)) {
+  if (/^\d+$/.test(number.value)) {
     return true;
   }
-  alert("You have entered an invalid input for years of experience.");
+  alert("Please enter valid numeric input for years of experience.");
   return false;
 }
